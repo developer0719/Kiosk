@@ -1,4 +1,13 @@
-package com.example.level6;
+package com.example.lv6;
 
-public class cart {
+import java.util.HashMap;
+import java.util.Map;
+
+public class Cart {
+
+    private final Map<MenuItem, Integer> cartItems = new HashMap<>();
+
+    public Map<MenuItem, Integer> getCartItems() {
+        return cartItems;
+    }
 }

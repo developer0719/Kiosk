@@ -1,14 +1,22 @@
-package com.example.level4;
+package com.example.lv4;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class Menu {
-    // MenuItem 클래스를 List로 관리
-        private String menuName;
-        private List<MenuItem> menuItems;
 
+    private final String name;
+    private final List<MenuItem> menuItems;
 
-    public Menu(String menuName){
-        this.menuName = menuName;
-        this.menuItems = new ArrayList<MenuItem>();
+    public Menu(String name, List<MenuItem> menuItems) {
+        this.name = name;
+        this.menuItems = menuItems;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public List<MenuItem> getMenuItems() {
+        return menuItems;
+    }
+}

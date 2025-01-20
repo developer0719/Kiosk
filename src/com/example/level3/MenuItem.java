@@ -1,28 +1,26 @@
-package com.example.level3;
+package com.example.lv3;
 
 public class MenuItem {
 
-    //1. 속성
-    private String name;
-    private int price;
-    private int description;
+    private final String name;
+    private final double price;
+    private final String description;
 
-    //2. 생성자
-    public MenuItem(String name, int price, int description){
+    public MenuItem(String name, double price, String description) {
         this.name = name;
         this.price = price;
         this.description = description;
     }
 
-    //3. 기능
-    public String getName(){
+    public String getName() {
         return name;
     }
-    public int getPrice(){
+
+    public double getPrice() {
         return price;
     }
-    public int getDescription(){
+
+    public String getDescription() {
         return description;
     }
-
 }

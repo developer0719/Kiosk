@@ -1,11 +1,26 @@
-package com.example.level4;
+package com.example.lv4;
 
 public class MenuItem {
-    // 필드 선언
-    private String name;
-    private String price;
-    private String description;
 
-    // 구조에 맞게 함수를 선언해놓고 가져다 사용하세요.
+    private final String name;
+    private final double price;
+    private final String description;
 
+    public MenuItem(String name, double price, String description) {
+        this.name = name;
+        this.price = price;
+        this.description = description;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public String getDescription() {
+        return description;
+    }
 }
